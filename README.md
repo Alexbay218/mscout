@@ -22,7 +22,6 @@ Here, seconds left should start counting down
 During operation, press the following keys to record data:
 
     Space     - Whenever the robot grabs a cube                                                 - "Has Cube" will be printed 
-    
                 (Note that on match start, the robot already has a cube)
                 
                 Whenever the robot has a cube and dropped it                                    - "Dropped Cube" will be printed
@@ -44,3 +43,11 @@ During operation, press the following keys to record data:
     Shift + O - Whenever the robot has a cube and failed in placing it on their opponent switch - "Failed Op Switch" will be printed
 
     D         - Whenever the robot mounts a clean defense                                       - "Defense Played" will be printed
+
+##Data
+After seconds left reaches -10 (10 second buffer to account for error), all the data collected is saved
+
+data is saved under data\<team number> folder with this format: "<team number>_<week number>_<match type><match number>.csv"
+
+Use compile.ahk to consolidate all the data to compdata\<team number>
+<WIP>
