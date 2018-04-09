@@ -57,7 +57,11 @@ During operation, press the following keys to record data:
 ## Data
 After seconds left reaches -10 (10 second buffer to account for error), all the data collected is saved
 
-data is saved under data\<team number> folder with this format: "<team number>_<week number>_<match type><match number>.csv"
+    data is saved under data\<team number> folder with this format: "<team number>_<week number>_<match type><match number>.csv"
 
-Use compile.ahk to consolidate all the data to compdata\<team number>
+    Use compile.ahk to consolidate all the data to compdata\<team number>
+    
+    The format "<team number>_<week number>.csv" is the sum of all matches for that particular week
+    
+    The format "<team number>.csv" is the sum of all matches for all weeks
 <WIP>
