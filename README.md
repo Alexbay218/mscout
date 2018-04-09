@@ -1,7 +1,7 @@
 # mscout
 New and easy match scouting system for the 2018 FRC game
 
-How to use:
+## How to use:
 
 Fill out all the information:
  
@@ -18,7 +18,8 @@ On match start, press the Enter key
 
 Here, seconds left should start counting down
 
-During operation, press the following keys to record data
+
+During operation, press the following keys to record data:
 
     Space - Whenever the robot grabs a cube - "Has Cube" will be printed (Note that on match start, the robot already has a cube)
 
