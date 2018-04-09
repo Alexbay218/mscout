@@ -5,13 +5,13 @@ Data can be found here: https://drive.google.com/drive/folders/16fIlywzSIZ-eCjD4
 
 Feel free to upload your data here to share to everyone
 
-### Features
+## Features
 
  - Logs time at which each event happens and duration
 
  - Easy to use keystroke based system
 
-### How to use
+## How to use
 
 Fill out all the information:
  
@@ -54,7 +54,7 @@ During operation, press the following keys to record data:
 
     D         - Whenever the robot mounts a clean defense                                       - "Defense Played" will be printed
 
-### Data
+## Data
 After seconds left reaches -10 (10 second buffer to account for error), all the data collected is saved
 
 data is saved under data\<team number> folder with this format: "<team number>_<week number>_<match type><match number>.csv"
