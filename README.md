@@ -1,6 +1,16 @@
 # mscout
 New and easy match scouting system for the 2018 FRC game
 
+Data can be found here: https://drive.google.com/drive/folders/16fIlywzSIZ-eCjD4rOBjxwxmg_Tv2XwW?usp=sharing
+
+Feel free to upload your data here to share to everyone
+
+## Features
+
+ - Logs time at which each event happens and duration
+
+ - Easy to use keystroke based system
+
 ## How to use:
 
 Fill out all the information:
