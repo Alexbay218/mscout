@@ -21,8 +21,10 @@ Here, seconds left should start counting down
 
 During operation, press the following keys to record data:
 
-    Space     - Whenever the robot grabs a cube                                                 - "Has Cube" will be printed (Note that on match start, the robot already has a cube)
-
+    Space     - Whenever the robot grabs a cube                                                 - "Has Cube" will be printed 
+    
+                (Note that on match start, the robot already has a cube)
+                
                 Whenever the robot has a cube and dropped it                                    - "Dropped Cube" will be printed
 
     L         - Whenever the robot completes an auto-run                                        - "Line Crossed" will be printed
