@@ -5,13 +5,13 @@ Data can be found here: https://drive.google.com/drive/folders/16fIlywzSIZ-eCjD4
 
 Feel free to upload your data here to share to everyone
 
-## Features
+### Features
 
  - Logs time at which each event happens and duration
 
  - Easy to use keystroke based system
 
-## How to use:
+### How to use
 
 Fill out all the information:
  
@@ -26,7 +26,7 @@ Fill out all the information:
 
 On match start, press the Enter key
 
-Here, seconds left should start counting down
+Here, seconds left should start counting down from 150
 
 
 During operation, press the following keys to record data:
@@ -34,7 +34,7 @@ During operation, press the following keys to record data:
     Space     - Whenever the robot grabs a cube                                                 - "Has Cube" will be printed 
                 (Note that on match start, the robot already has a cube)
                 
-                Whenever the robot has a cube and dropped it                                    - "Dropped Cube" will be printed
+              - Whenever the robot has a cube and dropped it                                    - "Dropped Cube" will be printed
 
     L         - Whenever the robot completes an auto-run                                        - "Line Crossed" will be printed
 
@@ -54,7 +54,7 @@ During operation, press the following keys to record data:
 
     D         - Whenever the robot mounts a clean defense                                       - "Defense Played" will be printed
 
-## Data
+### Data
 After seconds left reaches -10 (10 second buffer to account for error), all the data collected is saved
 
 data is saved under data\<team number> folder with this format: "<team number>_<week number>_<match type><match number>.csv"
