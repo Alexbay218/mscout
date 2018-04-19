@@ -11,6 +11,7 @@ Gui, Add, Text,, Match Number
 Gui, Add, Edit, vMatchEdit,
 Gui, Add, Text, HwndDisTHwnd, Seconds Left 150.00
 Gui, Add, ListBox, r12 w300 HwndDisLBHwnd,
+Gui, Add, Edit, r27 w150 -VScroll xm310 ym4
 Gui, Show
 
 restart:
