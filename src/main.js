@@ -185,7 +185,7 @@ t.onclick = function() {
 		document.getElementById("cube").onclick = function() {
 			if(cube == 1) {
 				cube = 0;
-				droppedts.push((150 - timeleft).toFixed(2));
+				droppedts.push((currcubets).toFixed(2));
 				droppedint.push(((150 - timeleft).toFixed(2)) - currcubets);
 				document.getElementById("cube").textContent = "Grabbed Cube";
 				log.push((150 - timeleft).toFixed(2) + " Dropped Cube");
@@ -200,7 +200,7 @@ t.onclick = function() {
 		document.getElementById("exchange").onclick = function() {
 			if(cube == 1) {
 				cube = 0;
-				exchangets.push((150 - timeleft).toFixed(2));
+				exchangets.push((currcubets).toFixed(2));
 				exchangeint.push(((150 - timeleft).toFixed(2)) - currcubets);
 				document.getElementById("cube").textContent = "Grabbed Cube";
 				log.push((150 - timeleft).toFixed(2) + " Placed in Exchange");
@@ -209,7 +209,7 @@ t.onclick = function() {
 		document.getElementById("switchS").onclick = function() {
 			if(cube == 1) {
 				cube = 0;
-				switchts.push((150 - timeleft).toFixed(2));
+				switchts.push((currcubets).toFixed(2));
 				switchint.push(((150 - timeleft).toFixed(2)) - currcubets);
 				switchsf.push(1);
 				document.getElementById("cube").textContent = "Grabbed Cube";
@@ -219,7 +219,7 @@ t.onclick = function() {
 		document.getElementById("switchF").onclick = function() {
 			if(cube == 1) {
 				cube = 0;
-				switchts.push((150 - timeleft).toFixed(2));
+				switchts.push((currcubets).toFixed(2));
 				switchint.push(((150 - timeleft).toFixed(2)) - currcubets);
 				switchsf.push(0);
 				document.getElementById("cube").textContent = "Grabbed Cube";
@@ -229,7 +229,7 @@ t.onclick = function() {
 		document.getElementById("scaleS").onclick = function() {
 			if(cube == 1) {
 				cube = 0;
-				scalets.push((150 - timeleft).toFixed(2));
+				scalets.push((currcubets).toFixed(2));
 				scaleint.push(((150 - timeleft).toFixed(2)) - currcubets);
 				scalesf.push(1);
 				document.getElementById("cube").textContent = "Grabbed Cube";
@@ -239,7 +239,7 @@ t.onclick = function() {
 		document.getElementById("scaleF").onclick = function() {
 			if(cube == 1) {
 				cube = 0;
-				scalets.push((150 - timeleft).toFixed(2));
+				scalets.push((currcubets).toFixed(2));
 				scaleint.push(((150 - timeleft).toFixed(2)) - currcubets);
 				scalesf.push(0);
 				document.getElementById("cube").textContent = "Grabbed Cube";
@@ -249,7 +249,7 @@ t.onclick = function() {
 		document.getElementById("opswitchS").onclick = function() {
 			if(cube == 1) {
 				cube = 0;
-				opswitchts.push((150 - timeleft).toFixed(2));
+				opswitchts.push((currcubets).toFixed(2));
 				opswitchint.push(((150 - timeleft).toFixed(2)) - currcubets);
 				opswitchsf.push(1);
 				document.getElementById("cube").textContent = "Grabbed Cube";
@@ -259,7 +259,7 @@ t.onclick = function() {
 		document.getElementById("opswitchF").onclick = function() {
 			if(cube == 1) {
 				cube = 0;
-				opswitchts.push((150 - timeleft).toFixed(2));
+				opswitchts.push((currcubets).toFixed(2));
 				opswitchint.push(((150 - timeleft).toFixed(2)) - currcubets);
 				opswitchsf.push(0);
 				document.getElementById("cube").textContent = "Grabbed Cube";
@@ -269,7 +269,6 @@ t.onclick = function() {
 		document.getElementById("climb").onclick = function() {
 			if(climb == 1) {
 				climb = 0;
-				climbts.push((150 - timeleft).toFixed(2));
 				climbint.push(((150 - timeleft).toFixed(2)) - currclimbts);
 				document.getElementById("climb").textContent = "Climb Attempt";
 				log.push((150 - timeleft).toFixed(2) + " Climb Complete");
