@@ -1,10 +1,46 @@
 <html>
 	<head>
+		<meta
+			name='viewport' 
+			content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' 
+		/>
 		<title>MSCOUT</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
 	</head>
 	<body>
+		<button id="top">Start</button>
+		<div id="bottom">
+			<div id="main">
+				<div id="timeleft">Seconds Left: 150</div>
+				<button id="cube" class="s1">Dropped Cube</button>
+				<button id="line" class="s2">Auto Line</button><br>
+				<button id="exchange" class="ns">Exchange</button><br>
+				<button id="switchS" class="s1">Switch</button>
+				<button id="switchF" class="s2">Failed</button><br>
+				<button id="scaleS" class="s1">Scale</button>
+				<button id="scaleF" class="s2">Failed</button><br>
+				<button id="opswitchS" class="s1">Opponent Switch</button>
+				<button id="opswitchF" class="s2">Failed</button><br>
+				<button id="def"class="ns">Defense</button><br>
+				<button id="climb" class="ns">Climb Attempt</button><br>
+			</div>
+			<div id="log"></div>
+			<div id="form">
+				Team Number<br>
+				<input type="text" id="teamnumber"><br>
+				Week Number<br>
+				<input type="text" id="weeknumber"><br>
+				Match Type<br>
+				<select id="matchtype">
+					<option value="Q">Q</option>
+					<option value="QF">QF</option>
+					<option value="SF">SF</option>
+					<option value="F">F</option>
+				</select><br>
+				Match Number<br>
+				<input type="text" id="matchnumber"><br>
+			</form>
+		</div>
 		<script src="src\main.js"></script>
-		<canvas id="main"></canvas>
 	</body>
 </html>
