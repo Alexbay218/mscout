@@ -77,6 +77,8 @@ var savefunc = function(filename, data) {
 };
 
 var resetfunc = function() {
+	document.getElementById("cube").textContent = "Dropped Cube";
+	document.getElementById("climb").textContent = "Climb Attempt";
 	t.textContent = "Start";
 	state = "notstarted";
 	m.style.display = "none";
