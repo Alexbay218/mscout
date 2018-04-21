@@ -1,4 +1,22 @@
 console.log("Loaded");
+
+function requestFullScreen(element) {
+    // Supports most browsers and their versions.
+    var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullScreen;
+
+    if (requestMethod) { // Native full screen.
+        requestMethod.call(element);
+    } else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+        var wscript = new ActiveXObject("WScript.Shell");
+        if (wscript !== null) {
+            wscript.SendKeys("{F11}");
+        }
+    }
+}
+
+var elem = document.body; // Make the body go full screen.
+requestFullScreen(elem);
+
 var state = "notstarted";
 var m = document.getElementById("main");
 var f = document.getElementById("form");
@@ -101,7 +119,7 @@ t.onclick = function() {
 		starttime = Date.now();
 		if(hasStart == false) {
 			window.setInterval(function() {
-				timeleft = (150 - (Date.now() - starttime)/1000).toFixed(2);
+				timeleft = parseFloat((150 - (Date.now() - starttime)/1000).toFixed(2));
 				if(cube == 1) {
 					document.getElementById("timeleft").innerHTML = "<div style=\"float:left;\">Seconds Left: " + timeleft + "</div><div align=\"right\">Has Cube</div>";
 				}
@@ -192,7 +210,7 @@ t.onclick = function() {
 			}
 			else {
 				cube = 1;
-				currcubets = (150 - timeleft).toFixed(2);
+				currcubets = parseFloat((150 - timeleft).toFixed(2));
 				document.getElementById("cube").textContent = "Dropped Cube";
 				log.push((150 - timeleft).toFixed(2) + " Grabbed Cube");
 			}
@@ -275,7 +293,7 @@ t.onclick = function() {
 			}
 			else {
 				climb = 1;
-				currclimbts = (150 - timeleft).toFixed(2);
+				currclimbts = parseFloat((150 - timeleft).toFixed(2));
 				document.getElementById("climb").textContent = "Climb Complete";
 				log.push((150 - timeleft).toFixed(2) + " Climb Attempted");
 			}
